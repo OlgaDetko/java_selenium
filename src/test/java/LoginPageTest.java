@@ -6,7 +6,7 @@ import page.MainUserPage;
 
 import static org.testng.Assert.assertTrue;
 
-public class LoginPageTests {
+public class LoginPageTest {
 
     static WebDriver driver;
 

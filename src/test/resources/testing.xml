@@ -4,8 +4,8 @@
 <suite verbose="0" name="Default suite">
     <test verbose="2" name="Default test" preserve-order="false">
         <classes>
-            <class name="LoginPageTests" />
-            <class name="RegisterPageTests" />
+            <class name="LoginPageTest" />
+            <class name="RegisterPageTest" />
         </classes>
     </test>
 </suite>

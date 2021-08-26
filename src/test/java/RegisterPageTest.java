@@ -5,7 +5,7 @@ import page.RegisterPage;
 
 import static org.testng.Assert.assertTrue;
 
-public class RegisterPageTests {
+public class RegisterPageTest {
 
     static WebDriver driver;
 
