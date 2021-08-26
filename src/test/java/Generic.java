@@ -1,3 +1,4 @@
+import io.github.cdimascio.dotenv.Dotenv;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -7,7 +8,8 @@ public class Generic {
 
     public static WebDriver init() {
 
-        System.setProperty("webdriver.chrome.driver", "D://Program Files//chromedriver_win32//chromedriver.exe");
+        Dotenv dotenv = Dotenv.load();
+        System.setProperty("webdriver.chrome.driver", dotenv.get("CHROME_DRIVER_PATH"));
 
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
